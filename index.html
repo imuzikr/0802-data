@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 분석의 원리</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .header-bg {
+            background-image: linear-gradient(to right, #6366f1, #8b5cf6); /* Purple gradient */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-4 sm:p-6 md:p-8">
+
+    <!-- Header Section -->
+    <header class="header-bg w-full max-w-4xl text-white p-6 rounded-t-xl shadow-lg flex flex-col items-center justify-center text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-2">데이터 분석의 원리</h1>
+        <p class="text-lg sm:text-xl opacity-90">데이터를 통해 숨겨진 통찰력을 발견하세요</p>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="w-full max-w-4xl bg-gray-50 p-6 rounded-b-xl shadow-lg">
+
+        <!-- Introduction Card -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">데이터 분석이란?</h2>
+            <p class="text-gray-700 leading-relaxed">
+                데이터 분석은 원시 데이터를 검사하고, 변환하며, 모델링하여 유용한 정보를 발견하고, 결론을 도출하며, 의사 결정을 지원하는 과정입니다. 이는 비즈니스, 과학, 사회 등 다양한 분야에서 중요한 역할을 합니다.
+            </p>
+        </section>
+
+        <!-- Principles Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">데이터 분석의 주요 원리 및 단계</h2>
+
+            <div class="space-y-6">
+                <!-- 1. 데이터 수집 (Data Collection) -->
+                <div class="p-4 bg-blue-50 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-medium text-blue-700 mb-2">1. 데이터 수집</h3>
+                    <p class="text-gray-700">
+                        데이터 분석의 첫 단계는 관련 데이터를 수집하는 것입니다. 이는 데이터베이스, 웹 스크래핑, 센서, 설문조사 등 다양한 소스에서 이루어질 수 있습니다. 데이터의 품질과 관련성이 중요합니다.
+                    </p>
+                </div>
+
+                <!-- 2. 데이터 정제 (Data Cleaning) -->
+                <div class="p-4 bg-green-50 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-medium text-green-700 mb-2">2. 데이터 정제</h3>
+                    <p class="text-gray-700">
+                        수집된 데이터는 종종 누락된 값, 오류, 중복 또는 일관성 없는 형식을 포함하고 있습니다. 데이터 정제는 이러한 문제를 식별하고 수정하여 데이터의 정확성과 신뢰성을 보장하는 과정입니다.
+                    </p>
+                </div>
+
+                <!-- 3. 데이터 탐색 및 시각화 (Data Exploration & Visualization) -->
+                <div class="p-4 bg-yellow-50 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-medium text-yellow-700 mb-2">3. 데이터 탐색 및 시각화</h3>
+                    <p class="text-gray-700">
+                        이 단계에서는 데이터의 패턴, 추세 및 이상치를 이해하기 위해 데이터를 탐색합니다. 차트, 그래프, 대시보드와 같은 시각화 도구를 사용하여 데이터를 더 쉽게 이해하고 통찰력을 얻을 수 있습니다.
+                    </p>
+                </div>
+
+                <!-- 4. 데이터 모델링 및 분석 (Data Modeling & Analysis) -->
+                <div class="p-4 bg-purple-50 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-medium text-purple-700 mb-2">4. 데이터 모델링 및 분석</h3>
+                    <p class="text-gray-700">
+                        통계적 방법, 기계 학습 알고리즘 또는 기타 분석 기술을 사용하여 데이터에서 의미 있는 패턴을 식별하고 예측 모델을 구축합니다. 이는 가설을 검증하고 질문에 답하는 데 도움이 됩니다.
+                    </p>
+                </div>
+
+                <!-- 5. 결과 해석 및 커뮤니케이션 (Interpretation & Communication) -->
+                <div class="p-4 bg-red-50 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-medium text-red-700 mb-2">5. 결과 해석 및 커뮤니케이션</h3>
+                    <p class="text-gray-700">
+                        분석 결과를 명확하고 간결하게 해석하고 이해 관계자에게 전달하는 것이 중요합니다. 이는 보고서, 프레젠테이션 또는 대시보드 형태로 이루어질 수 있으며, 의사 결정에 직접적인 영향을 미칩니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Card -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">결론</h2>
+            <p class="text-gray-700 leading-relaxed">
+                데이터 분석은 단순한 기술이 아니라 데이터를 통해 가치를 창출하고 더 나은 의사 결정을 내릴 수 있도록 돕는 강력한 도구입니다. 이 원리들을 이해하고 적용함으로써 데이터의 잠재력을 최대한 활용할 수 있습니다.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full max-w-4xl text-center text-gray-600 text-sm mt-6 p-4">
+        &copy; 2025 데이터 분석 원리. 모든 권리 보유.
+    </footer>
+
+</body>
+</html>
