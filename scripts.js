@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 각 버튼에 클릭 이벤트 리스너를 추가합니다.
     toggleButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // 버튼이 속한 부모 요소(h3)의 다음 형제 요소(숨겨진 내용이 담긴 div)를 찾습니다.
-            const content = button.closest('.example-step').querySelector('.hidden-content');
+            // 버튼이 속한 부모 요소(.example-step)를 찾습니다.
+            const exampleStep = button.closest('.example-step');
+            // 숨겨진 내용이 담긴 div를 찾습니다.
+            const content = exampleStep.querySelector('.hidden-content');
 
             // 'collapsed' 클래스가 있는지 확인하여 현재 상태를 파악합니다.
             if (content.classList.contains('collapsed')) {
