@@ -14,13 +14,15 @@ body {
 .header-bg {
     background-image: linear-gradient(to right, #6366f1, #8b5cf6); /* Original purple gradient */
 }
+
 /* For the interactive example sections */
 .hidden-content {
+    overflow: hidden; /* Important for max-height transition */
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1; /* Default visible state */
+}
+
+.hidden-content.collapsed {
     max-height: 0;
     opacity: 0;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-.hidden-content.show {
-    max-height: 500px; /* Adjust as needed for content height */
-    opacity: 1;
 }
