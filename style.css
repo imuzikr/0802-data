@@ -1,0 +1,16 @@
+/* style.css */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a202c; /* Dark gray background for body */
+    color: #e2e8f0; /* Light text color for body */
+}
+.card {
+    background-color: #2d3748; /* Darker gray for cards */
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Stronger shadow for dark mode */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.header-bg {
+    background-image: linear-gradient(to right, #1e3a8a, #4c1d95); /* Darker blue to purple gradient */
+}
